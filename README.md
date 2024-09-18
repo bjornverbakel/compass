@@ -6,7 +6,7 @@ Commit your work when you're finished and give it a usefull name.
 
 ## Description
 
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+Our project, as design studio Compass, is to help our client [REDACTED] achieve their goal of [REDACTED]
 
 ## Badges
 
