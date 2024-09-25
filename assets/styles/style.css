@@ -79,6 +79,7 @@ h1 {
 	font-family: Quando-Regular;
 	font-size: 4em;
 	color: var(--darkblue);
+	font-weight: 400;
 }
 
 .star-front::before {
@@ -90,6 +91,11 @@ h1 {
 .star-behind::after {
 	content: url('../img/star.svg');
 	margin-left: 30px;
+	filter: invert(19%) sepia(55%) saturate(2284%) hue-rotate(216deg) brightness(100%) contrast(85%);
+}
+
+.white.star-front::before {
+	filter: invert(100%) sepia(13%) saturate(7448%) hue-rotate(186deg) brightness(113%) contrast(112%);
 }
 
 /* ========================================================= */
@@ -121,7 +127,6 @@ header {
 	/* Responsive font size */
 	font-weight: 500;
 	letter-spacing: 0.2em;
-	margin-right: 10px;
 	/* Space between name and logo */
 }
 
@@ -140,11 +145,9 @@ header {
 		align-items: flex-start;
 	}
 
-
 	.navbar {
 		justify-content: flex-start;
 	}
-
 
 	.name-logo>img {
 		width: 75px;
@@ -152,19 +155,16 @@ header {
 	}
 }
 
-
 @media (max-width: 480px) {
 	header {
 		padding: 1em;
 		/* Adjust padding for smaller screens */
 	}
 
-
 	.name-logo>img {
 		width: 30px;
 		/* Smaller logo for mobile */
 	}
-
 
 	.navbar {
 		gap: 0.5em;
@@ -211,6 +211,7 @@ section.hero {
 .big-word {
 	font-family: Quando-Regular;
 	font-size: 1.5em;
+	padding: 0 3px 0 3px;
 }
 
 .red-txt {
@@ -234,13 +235,21 @@ section.hero {
 }
 
 .navbar li {
-    font-size: 1rem;
-    color: var(--darkblue);
+	font-size: 1.5rem;
+	color: var(--darkblue);
 }
 
-.navbar .icon {
-    width: 15px;
-    height: auto;
+.navbar .icon,
+.member .roles .icon {
+	width: 15px;
+	height: auto;
+	filter: invert(19%) sepia(55%) saturate(2284%) hue-rotate(216deg) brightness(100%) contrast(85%);
+}
+
+.seperator .icon {
+	width: 30px;
+	height: auto;
+	filter: invert(23%) sepia(60%) saturate(3656%) hue-rotate(342deg) brightness(87%) contrast(94%);
 }
 
 .compass-img {
@@ -257,7 +266,7 @@ section.hero {
 .left-arrow,
 .right-arrow {
 	position: absolute;
-	bottom: 12%;
+	bottom: 17%;
 	height: auto;
 	width: 50%;
 	max-width: 75px;
@@ -313,4 +322,95 @@ section.blue-section .about:not(.compass-section .about) {
 .about-img img {
 	height: auto;
 	width: 100%;
+}
+
+.crew-header h1 {
+	border-top: 1.5px solid var(--darkblue);
+	border-bottom: 1.5px solid var(--darkblue);
+	display: flex;
+	justify-content: center;
+	padding: 2% 0% 2% 0%;
+	text-transform: uppercase;
+}
+
+.crew-header {
+	margin: 0 7% 0 7%;
+	padding-top: 5%;
+	border-left: 1.5px solid var(--darkblue);
+	border-right: 1.5px solid var(--darkblue);
+}
+
+.member-container {
+	display: flex;
+	flex-direction: row;
+	gap: 5%;
+	justify-content: space-between;
+}
+
+.member-container .portrait-container {
+	width: 35%;
+	aspect-ratio: 1 / 1;
+	height: fit-content;
+}
+
+.member-container .portrait {
+	margin: 40px;
+	aspect-ratio: 1/1;
+	background-color: var(--lightblue);
+}
+
+.portrait-container .elipsis {
+	translate: 10px 10px;
+	height: auto;
+	position: absolute;
+	width: 25%;
+	/* uncomment to hide */
+	/*
+	display: none; 
+	*/
+}
+
+.member-container .member {
+	flex: 1;
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+}
+
+.member .roles {
+	display: flex;
+	column-gap: 20px;
+	flex-wrap: wrap;
+}
+
+.member .name {
+	text-transform: uppercase;
+	letter-spacing: normal;
+	font-size: 4em;
+}
+
+.member .description {
+	font-size: 1.5em;
+}
+
+.seperator {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+}
+
+.seperator hr {
+	flex: 1;
+	background-color: var(--darkblue);
+	color: var(--darkblue);
+	height: 1.5px;
+	border-width: 0;
+}
+
+.crew {
+	gap: 30px;
+}
+
+.crew .member-container:nth-child(even of .member-container) {
+	flex-direction: row-reverse;
 }
