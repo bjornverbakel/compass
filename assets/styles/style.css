@@ -98,33 +98,110 @@ img {
 	height: 10em;
 }
 
-.header-container .logo-txt {
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	/* Adjusted for better spacing */
+	border-bottom: 2px solid var(--darkblue);
+	color: var(--darkblue);
+	padding: 1em 2em;
+	/* Padding for better spacing */
+}
+
+.name-logo {
+	display: flex;
+	align-items: center;
+}
+
+.name {
+	color: var(--darkblue);
+	font-family: Quando-Regular;
+	font-size: clamp(1rem, 2vw + 1rem, 3rem);
+	/* Responsive font size */
+	font-weight: 500;
+	letter-spacing: 0.2em;
+	margin-right: 10px;
+	/* Space between name and logo */
+}
+
+.name-logo>img {
+	width: 100px;
+	/* Initial width for the logo */
+	height: auto;
+	/* Maintain aspect ratio */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+	header {
+		flex-direction: column;
+		/* Stack name-logo and navbar vertically */
+		align-items: flex-start;
+	}
+
+
+	.navbar {
+		justify-content: flex-start;
+	}
+
+
+	.name-logo>img {
+		width: 75px;
+		/* Smaller logo for smaller screens */
+	}
+}
+
+
+@media (max-width: 480px) {
+	header {
+		padding: 1em;
+		/* Adjust padding for smaller screens */
+	}
+
+
+	.name-logo>img {
+		width: 30px;
+		/* Smaller logo for mobile */
+	}
+
+
+	.navbar {
+		gap: 0.5em;
+		/* Adjust gap between navbar items */
+	}
+}
+
+.header-container h1 {
 	font-family: "Quando-Regular";
 	font-size: 5rem;
 	font-weight: 500;
 	letter-spacing: 0.3em;
 }
 
-.header-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 1%;
-	border-bottom: 1.5px solid var(--darkblue);
-}
-
 .navbar {
-	margin-right: 22px;
 	display: flex;
 	gap: 1.5em;
+	align-items: center;
 }
+
+.sections {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 5%;
+	margin: 0 5% 0 5%;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+}
+
 
 .navigation-container {
 	display: flex;
 	flex-direction: column;
 	align-items: end;
-	color: var(--darkblue);
 }
+
 
 section.hero {
 	gap: 25px;
@@ -154,6 +231,16 @@ section.hero {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.navbar li {
+    font-size: 1rem;
+    color: var(--darkblue);
+}
+
+.navbar .icon {
+    width: 15px;
+    height: auto;
 }
 
 .compass-img {
