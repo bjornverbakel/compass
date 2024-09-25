@@ -82,13 +82,14 @@ h1 {
 }
 
 .star-front::before {
-	content: url('../img/star.svg');
+	content: url("../img/star.svg");
 	margin-right: 30px;
-	filter: invert(19%) sepia(55%) saturate(2284%) hue-rotate(216deg) brightness(100%) contrast(85%);
+	filter: invert(19%) sepia(55%) saturate(2284%) hue-rotate(216deg)
+		brightness(100%) contrast(85%);
 }
 
 .star-behind::after {
-	content: url('../img/star.svg');
+	content: url("../img/star.svg");
 	margin-left: 30px;
 }
 
@@ -125,7 +126,7 @@ header {
 	/* Space between name and logo */
 }
 
-.name-logo>img {
+.name-logo > img {
 	width: 100px;
 	/* Initial width for the logo */
 	height: auto;
@@ -140,18 +141,15 @@ header {
 		align-items: flex-start;
 	}
 
-
 	.navbar {
 		justify-content: flex-start;
 	}
 
-
-	.name-logo>img {
+	.name-logo > img {
 		width: 75px;
 		/* Smaller logo for smaller screens */
 	}
 }
-
 
 @media (max-width: 480px) {
 	header {
@@ -159,12 +157,10 @@ header {
 		/* Adjust padding for smaller screens */
 	}
 
-
-	.name-logo>img {
+	.name-logo > img {
 		width: 30px;
 		/* Smaller logo for mobile */
 	}
-
 
 	.navbar {
 		gap: 0.5em;
@@ -195,13 +191,11 @@ header {
 	border-right: 2px solid black;
 }
 
-
 .navigation-container {
 	display: flex;
 	flex-direction: column;
 	align-items: end;
 }
-
 
 section.hero {
 	gap: 25px;
@@ -234,13 +228,13 @@ section.hero {
 }
 
 .navbar li {
-    font-size: 1rem;
-    color: var(--darkblue);
+	font-size: 1rem;
+	color: var(--darkblue);
 }
 
 .navbar .icon {
-    width: 15px;
-    height: auto;
+	width: 15px;
+	height: auto;
 }
 
 .compass-img {
