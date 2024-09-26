@@ -110,6 +110,11 @@ img {
 	height: 10em;
 }
 
+.main{
+	transform: translateY(100px);
+}
+
+
 header {
 	display: flex;
 	align-items: center;
@@ -118,9 +123,20 @@ header {
 	border-bottom: 2px solid var(--darkblue);
 	color: var(--darkblue);
 	padding: 10px;
+	background-color: var(--lightgray);
 	/* Padding for better spacing */
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	max-height: 100px;
 }
-
+/*
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+*/
 .name-logo a {
 	display: flex;
 	align-items: center;
@@ -273,6 +289,7 @@ section.hero {
 	height: auto;
 }
 
+
 .left-arrow,
 .right-arrow {
 	position: absolute;
@@ -280,7 +297,7 @@ section.hero {
 	height: auto;
 	width: 50%;
 	max-width: 75px;
-	display: none; 
+	display: none;
 }
 
 .left-arrow {
@@ -604,4 +621,13 @@ hr {
 a .logo {
 	width: 100px;
 	height: auto;
+}
+
+.bottom-footer {
+	border-top: none;
+	padding: 3% 5% 3% 5% !important;
+}
+
+.top-footer {
+	padding: 3% 5% 3% 5% !important;
 }
