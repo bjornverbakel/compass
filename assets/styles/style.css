@@ -543,7 +543,7 @@ footer>section img {
 	text-transform: uppercase;
 	color: var(--lightgray);
 	font-family: Quando-Regular;
-	animation: marquee 30s linear infinite forwards;
+	animation: marquee 50s linear infinite forwards;
 
 	&:hover {
 		animation-play-state: paused;
