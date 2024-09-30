@@ -366,9 +366,14 @@ section.blue-section .about:not(.compass-section .about) {
 }
 
 .member-container .portrait {
-  margin: 40px;
-  aspect-ratio: 1/1;
-  background-color: var(--lightblue);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  aspect-ratio: 1 / 1;
+}
+
+.crew:nth-child(2) .member-container .portrait {
+  background-image: url(/assets/img/li-ming.png);
 }
 
 .portrait-container .elipsis {
