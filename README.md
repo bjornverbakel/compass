@@ -1,5 +1,5 @@
 
-![Logo](assets/img/logo-text)
+<img src="assets/img/logo-text.png" width='50%'>
 
 # Compass design studio website
 Compass is a freelance company, which specializes in designing and developing projects for clients. We consist of four students who strive to create authentic products with the client’s vision at the center of the design. The market is always changing, and we are aware of that. Adaptability and flexibility are therefore an important aspect of our workflow. To ensure a hitch free experience we are transparent about our process and opinions. 
@@ -17,7 +17,10 @@ Compass is a freelance company, which specializes in designing and developing pr
 
 ## Demo
 
-View a demo website [here](https://i529052.hera.fontysict.net/compass/).## Color Reference
+View a demo website [here](https://i529052.hera.fontysict.net/compass/).
+
+
+## Color Reference
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
@@ -29,12 +32,12 @@ View a demo website [here](https://i529052.hera.fontysict.net/compass/).## Color
 | Light blue | ![#badbe6](https://via.placeholder.com/10/badbe6?text=+) #badbe6 |
 
 
-
 ## Future implementations
 
 - Contact page
 
 - Improved responsiveness
+
 
 ## License
 
