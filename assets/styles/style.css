@@ -194,7 +194,7 @@ header {
 
 section.hero {
   gap: 25px;
-  height: 71vh;
+  height: 75vh;
 }
 
 .big-word {
@@ -348,7 +348,6 @@ section.blue-section .about:not(.compass-section .about) {
 
 .crew-header {
   margin: 0 10% 0 10%;
-  padding-top: 5%;
   border-left: 1.5px solid var(--darkblue);
   border-right: 1.5px solid var(--darkblue);
 }
@@ -515,7 +514,7 @@ footer > section img {
 }
 
 .marquee__content {
-  gap: 140px;
+  gap: 60px;
   width: 300% !important;
   height: 100%;
   display: flex;
@@ -552,7 +551,7 @@ footer > section img {
 
 .marquee-icon {
 	filter: invert(100%) sepia(13%) saturate(7448%) hue-rotate(186deg) brightness(113%) contrast(112%);
-	width: 20px;
+	min-width: 20px;
 	height: auto;
 }
 
@@ -619,4 +618,9 @@ a .logo {
 
 .top-footer {
   padding: 3% 5% 3% 5% !important;
+}
+
+.sail-btn {
+	max-width: 50%;
+	height: auto;
 }
