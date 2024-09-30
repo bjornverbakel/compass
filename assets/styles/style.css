@@ -161,41 +161,6 @@ header {
 	/* Maintain aspect ratio */
 }
 
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-	header {
-		flex-direction: column;
-		/* Stack name-logo and navbar vertically */
-		align-items: flex-start;
-	}
-
-	.navbar {
-		justify-content: flex-start;
-	}
-
-	.name-logo>img {
-		width: 75px;
-		/* Smaller logo for smaller screens */
-	}
-}
-
-@media (max-width: 480px) {
-	header {
-		padding: 1em;
-		/* Adjust padding for smaller screens */
-	}
-
-	.name-logo>img {
-		width: 30px;
-		/* Smaller logo for mobile */
-	}
-
-	.navbar {
-		gap: 0.5em;
-		/* Adjust gap between navbar items */
-	}
-}
-
 .header-container h1 {
 	font-family: "Quando-Regular";
 	font-size: 5rem;
@@ -578,7 +543,13 @@ footer>section img {
 	margin: 0;
 }
 
-.list-inline img {
+.list-inline li img {
+	filter: invert(100%) sepia(13%) saturate(7448%) hue-rotate(186deg) brightness(113%) contrast(112%);
+	width: 20px;
+	height: auto;
+}
+
+.marquee-icon {
 	filter: invert(100%) sepia(13%) saturate(7448%) hue-rotate(186deg) brightness(113%) contrast(112%);
 	width: 20px;
 	height: auto;
