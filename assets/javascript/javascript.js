@@ -1,12 +1,7 @@
-window.onscroll = function() {myFunction()};
-
-var header = document.getElementById("header");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
+// Send popup alert on click of contact page
+let contactBtns = document.querySelectorAll('.contactBtn');
+contactBtns.forEach(contactBtn => {
+  contactBtn.addEventListener('click', () => {
+    alert('Contact page is currently unavailable.');
+  });
+});
