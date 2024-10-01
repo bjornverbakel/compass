@@ -372,8 +372,17 @@ section.blue-section .about:not(.compass-section .about) {
   aspect-ratio: 1 / 1;
 }
 
-.crew:nth-child(2) .member-container .portrait {
+.bjorn-png {
+  background-image: url(/assets/img/bjorn.png);
+}
+.liming-png {
   background-image: url(/assets/img/li-ming.png);
+}
+.sergio-png {
+  background-image: url(/assets/img/sergio.png);
+}
+.mattilda-png {
+  background-image: url(/assets/img/mattilda.png);
 }
 
 .portrait-container .elipsis {
@@ -549,15 +558,17 @@ footer > section img {
 }
 
 .list-inline li img {
-	filter: invert(100%) sepia(13%) saturate(7448%) hue-rotate(186deg) brightness(113%) contrast(112%);
-	width: 20px;
-	height: auto;
+  filter: invert(100%) sepia(13%) saturate(7448%) hue-rotate(186deg)
+    brightness(113%) contrast(112%);
+  width: 20px;
+  height: auto;
 }
 
 .marquee-icon {
-	filter: invert(100%) sepia(13%) saturate(7448%) hue-rotate(186deg) brightness(113%) contrast(112%);
-	min-width: 20px;
-	height: auto;
+  filter: invert(100%) sepia(13%) saturate(7448%) hue-rotate(186deg)
+    brightness(113%) contrast(112%);
+  min-width: 20px;
+  height: auto;
 }
 
 @keyframes marquee {
@@ -626,6 +637,6 @@ a .logo {
 }
 
 .sail-btn {
-	max-width: 50%;
-	height: auto;
+  max-width: 50%;
+  height: auto;
 }
