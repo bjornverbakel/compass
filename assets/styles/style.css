@@ -122,7 +122,7 @@ header {
   align-items: center;
   justify-content: space-around;
   /* Adjusted for better spacing */
-  border-bottom: 2px solid var(--darkblue);
+  border-bottom: 1.5px solid var(--darkblue);
   color: var(--darkblue);
   padding: 10px;
   background-color: var(--beige);
@@ -373,16 +373,16 @@ section.blue-section .about:not(.compass-section .about) {
 }
 
 .bjorn-png {
-  background-image: url(/assets/img/bjorn.png);
+  background-image: url(../img/bjorn.png);
 }
 .liming-png {
-  background-image: url(/assets/img/li-ming.png);
+  background-image: url(../img/li-ming.png);
 }
 .sergio-png {
-  background-image: url(/assets/img/sergio.png);
+  background-image: url(../img/sergio.png);
 }
 .mattilda-png {
-  background-image: url(/assets/img/mattilda.png);
+  background-image: url(../img/mattilda.png);
 }
 
 .portrait-container .elipsis {
