@@ -1,62 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compass | Design Studio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.png" />
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Compass | Design Studio</title>
-	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-	<link rel="stylesheet" href="assets/styles/style.css" />
-	<link rel="icon" type="image/x-icon" href="assets/img/logo.png" />
-</head>
+  <body id="home">
+    <!-- header -->
+    <header id="header">
+      <div class="name-logo">
+        <a href="#home">
+          <h1 class="name">Compass</h1>
 
-<body id="home">
+          <img src="assets/img/logo.png" alt="Logo" class="logo" />
+        </a>
+      </div>
+      <ul class="navbar">
+        <li>
+          <a href="#about">About us</a>
+          <div class="underline"></div>
+        </li>
+        <li>
+          <img src="assets/img/star.svg" alt="Vector Icon" class="icon" />
+        </li>
+        <li class="contactBtn">
+          <a href="">Contact</a>
+          <div class="underline"></div>
+        </li>
+      </ul>
+    </header>
 
-	<!-- header -->
-	<header id="header">
-		<div class="name-logo">
-			<a href="#home">
-				<h1 class="name">Compass</h1>
-				<img src="assets/img/logo.png" alt="Logo" class="logo" />
-			</a>
-		</div>
-		<ul class="navbar">
-			<li>
-				<a href="#about">About us</a>
-				<div class="underline"></div>
-			</li>
-			<li>
-				<img src="assets/img/star.svg" alt="Vector Icon" class="icon" />
-			</li>
-			<li>
-				<a href="#crew">Crew</a>
-				<div class="underline"></div>
-			</li>
-		</ul>
-	</header>
-
-	<!-- hero section -->
-	<div class="main">
-		<section class="hero">
-			<p data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
-				Total <span class="big-word blue-txt">creative freedom</span> is like
-				being in the open sea
-			</p>
-			<p data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
-				There are no guides and many hidden dangers...
-			</p>
-			<p data-aos="fade-right" data-aos-delay="600" data-aos-duration="1000">
-				Like a compass guides a sailor, we guide you to a
-				<span class="big-word red-txt">design solution</span>
-			</p>
-		</section>
-		<section class="blue-section compass-section">
-			<div class="about">
-				<img src="assets/img/illu-compass.svg" alt="compass" class="compass-img" />
-				<img src="assets/img/hero-arrow-left.svg" alt="arrow" class="left-arrow" />
-				<img src="assets/img/hero-arrow-right.svg" alt="arrow" class="right-arrow" />
-			</div>
-		</section>
+    <!-- hero section -->
+    <div class="main">
+      <section class="hero">
+        <p data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
+          Total <span class="big-word blue-txt">creative freedom</span> is like
+          being in the open sea
+        </p>
+        <p data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000">
+          There are no guides and many hidden dangers...
+        </p>
+        <p data-aos="fade-right" data-aos-delay="600" data-aos-duration="1000">
+          Like a compass guides a sailor, we guide you to a
+          <span class="big-word red-txt">design solution</span>
+        </p>
+      </section>
+      <section class="blue-section compass-section">
+        <div class="about">
+          <img
+            src="assets/img/illu-compass.svg"
+            alt="compass"
+            class="compass-img"
+          />
+          <img
+            src="assets/img/hero-arrow-left.svg"
+            alt="arrow"
+            class="left-arrow"
+          />
+          <img
+            src="assets/img/hero-arrow-right.svg"
+            alt="arrow"
+            class="right-arrow"
+          />
+        </div>
+      </section>
 
 		<!-- about section -->
 		<section class="blue-section">
@@ -66,14 +77,10 @@
 						About us
 					</h1>
 					<p data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
-						Compass is a freelance company, which specializes in designing and developing projects for
-						clients. We consist of four students who strive to create authentic products with the client's
-						vision at the center of the design.
-					</p>
-					<p data-aos="fade-right" data-aos-delay="400" data-aos-duration="800">
-						The market is always changing, and we are aware of that.
-						Adaptability and flexibility are therefore an important aspect of our workflow. To ensure a
-						hitch free experience we are transparent about our process and opinions.
+						Compass is a recently established design studio based in Eindhoven
+						founded by the four pillars Bjorn, Li-Ming, Matt, and Sergio
+						<br /><br />
+						We deliver professional work, while keeping a casual environment.
 					</p>
 				</div>
 				<div class="about-img">
@@ -86,15 +93,14 @@
 		<section class="top-footer">
 			<div class="footer-par-button">
 				<p class="footer-par">Start your design journey today!</p>
-				<img src="assets/img/set-sail.svg" class="sail-btn contactBtn" alt="CTA button" data-aos="zoom-out"
-					id="crew" />
+				<img src="assets/img/set-sail.svg" class="sail-btn contactBtn" alt="CTA button" data-aos="zoom-out" />
 			</div>
 		</section>
-
-		<!-- team members -->
 		<div class="crew-header">
 			<h1 class="star-behind star-front">Meet the Crew</h1>
 		</div>
+
+		<!-- team members -->
 		<section class="crew">
 			<div class="member-container">
 				<div class="portrait-container">
@@ -118,159 +124,153 @@
 				</div>
 			</div>
 
-			<div class="seperator">
-				<hr />
-				<img src="assets/img/star.svg" alt="Vector Icon" class="icon" />
-				<hr />
-			</div>
+        <div class="seperator">
+          <hr />
+          <img src="assets/img/star.svg" alt="Vector Icon" class="icon" />
+          <hr />
+        </div>
 
-			<div class="member-container">
-				<div class="portrait-container">
-					<div class="portrait liming-png"></div>
-				</div>
-				<div class="member" data-aos="fade-right" data-aos-duration="800">
-					<div class="roles">Front-end development</div>
-					<div class="name">Li-Ming</div>
-					<div class="description">
-						Hi I'm Li-Ming Hillman. Front-end-development is a big interest of
-						mine. I love to see my work come to life right in front of me. I
-						also have an interest in video editing and design psychology.
-						Outside of ICT I also enjoy reading books and playing the piano.
-					</div>
-				</div>
-			</div>
+        <div class="member-container">
+          <div class="portrait-container">
+            <div class="portrait liming-png"></div>
+          </div>
+          <div class="member" data-aos="fade-right" data-aos-duration="800">
+            <div class="roles">Front-end development</div>
+            <div class="name">Li-Ming</div>
+            <div class="description">
+              Hi I'm Li-Ming Hillman. Front-end-development is a big interest of
+              mine. I love to see my work come to life right in front of me. I
+              also have an interest in video editing and design psychology.
+              Outside of ICT I also enjoy reading books and playing the piano.
+            </div>
+          </div>
+        </div>
 
-			<div class="seperator">
-				<hr />
-				<img src="assets/img/star.svg" alt="Vector Icon" class="icon" />
-				<hr />
-			</div>
+        <div class="seperator">
+          <hr />
+          <img src="assets/img/star.svg" alt="Vector Icon" class="icon" />
+          <hr />
+        </div>
 
 			<div class="member-container">
 				<div class="portrait-container">
 					<div class="portrait sergio-png"></div>
 				</div>
 				<div class="member" data-aos="fade-left" data-aos-duration="800">
-					<div class="roles">
-						UX-research
-						<img src="assets/img/star.svg" alt="Vector Icon" class="icon" />
-						Graphic design
-					</div>
-					<div class="name">Sergio</div>
+					<div class="roles">Role</div>
+					<div class="name">Name</div>
 					<div class="description">
-						Doing research is one of my strongest suits, I treat it like a game where the objective is to
-						find hidden pieces of a puzzle. Besides that, I enjoy designing, editing, and creating engaging
-						Media Products.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+						enim ad minim veniam, quis nostrud exercitation ullamco laboris
+						nisi ut aliquip ex ea commodo consequat.
 					</div>
 				</div>
 			</div>
 
-			<div class="seperator">
-				<hr />
-				<img src="assets/img/star.svg" alt="Vector Icon" class="icon" />
-				<hr />
-			</div>
+        <div class="seperator">
+          <hr />
+          <img src="assets/img/star.svg" alt="Vector Icon" class="icon" />
+          <hr />
+        </div>
 
 			<div class="member-container">
 				<div class="portrait-container">
 					<div class="portrait mattilda-png"></div>
 				</div>
 				<div class="member" data-aos="fade-right" data-aos-duration="800">
-					<div class="roles">
-						Concept artist
-						<img src="assets/img/star.svg" alt="Vector Icon" class="icon" />
-						Graphic design
-					</div>
-					<div class="name">Matilda</div>
+					<div class="roles">Role</div>
+					<div class="name">Name</div>
 					<div class="description">
-						I am Matilda, the team's resident concept artist. My experience mainly lies in graphic design
-						and video editing.
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+						enim ad minim veniam, quis nostrud exercitation ullamco laboris
+						nisi ut aliquip ex ea commodo consequat.
 					</div>
 				</div>
 			</div>
-
 		</section>
 
-		<footer>
-			<!-- marquee -->
-			<section class="blue-section">
-				<div class="marquee">
-					<div class="marquee__content">
-						<ul class="list-inline">
-							<li>Web design</li>
-							<li>
-								<img src="assets/img/star.svg" alt="" class="marquee-icon" />
-							</li>
-							<li>Web development</li>
-							<li>
-								<img src="assets/img/star.svg" alt="" class="marquee-icon" />
-							</li>
-							<li>Branding</li>
-							<li>
-								<img src="assets/img/star.svg" alt="" class="marquee-icon" />
-							</li>
-							<li>Logo design</li>
-							<li>
-								<img src="assets/img/star.svg" alt="" class="marquee-icon" />
-							</li>
-						</ul>
-						<ul class="list-inline">
-							<li>Web design</li>
-							<li>
-								<img src="assets/img/star.svg" alt="" class="marquee-icon" />
-							</li>
-							<li>Web development</li>
-							<li>
-								<img src="assets/img/star.svg" alt="" class="marquee-icon" />
-							</li>
-							<li>Branding</li>
-							<li>
-								<img src="assets/img/star.svg" alt="" class="marquee-icon" />
-							</li>
-							<li>Logo design</li>
-							<li>
-								<img src="assets/img/star.svg" alt="" class="marquee-icon" />
-							</li>
-						</ul>
-						<ul class="list-inline">
-							<li>Web design</li>
-							<li>
-								<img src="assets/img/star.svg" alt="" class="marquee-icon" />
-							</li>
-							<li>Web development</li>
-							<li>
-								<img src="assets/img/star.svg" alt="" class="marquee-icon" />
-							</li>
-							<li>Branding</li>
-							<li>
-								<img src="assets/img/star.svg" alt="" class="marquee-icon" />
-							</li>
-							<li>Logo design</li>
-							<li>
-								<img src="assets/img/star.svg" alt="" class="marquee-icon" />
-							</li>
-						</ul>
-						<ul class="list-inline">
-							<li>Web design</li>
-							<li>
-								<img src="assets/img/star.svg" alt="" class="marquee-icon" />
-							</li>
-							<li>Web development</li>
-							<li>
-								<img src="assets/img/star.svg" alt="" class="marquee-icon" />
-							</li>
-							<li>Branding</li>
-							<li>
-								<img src="assets/img/star.svg" alt="" class="marquee-icon" />
-							</li>
-							<li>Logo design</li>
-							<li>
-								<img src="assets/img/star.svg" alt="" class="marquee-icon" />
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
+      <footer>
+        <!-- marquee -->
+        <section class="blue-section">
+          <div class="marquee">
+            <div class="marquee__content">
+              <ul class="list-inline">
+                <li>Web design</li>
+                <li>
+                  <img src="assets/img/star.svg" alt="" class="marquee-icon" />
+                </li>
+                <li>Web development</li>
+                <li>
+                  <img src="assets/img/star.svg" alt="" class="marquee-icon" />
+                </li>
+                <li>Branding</li>
+                <li>
+                  <img src="assets/img/star.svg" alt="" class="marquee-icon" />
+                </li>
+                <li>Logo design</li>
+                <li>
+                  <img src="assets/img/star.svg" alt="" class="marquee-icon" />
+                </li>
+              </ul>
+              <ul class="list-inline">
+                <li>Web design</li>
+                <li>
+                  <img src="assets/img/star.svg" alt="" class="marquee-icon" />
+                </li>
+                <li>Web development</li>
+                <li>
+                  <img src="assets/img/star.svg" alt="" class="marquee-icon" />
+                </li>
+                <li>Branding</li>
+                <li>
+                  <img src="assets/img/star.svg" alt="" class="marquee-icon" />
+                </li>
+                <li>Logo design</li>
+                <li>
+                  <img src="assets/img/star.svg" alt="" class="marquee-icon" />
+                </li>
+              </ul>
+              <ul class="list-inline">
+                <li>Web design</li>
+                <li>
+                  <img src="assets/img/star.svg" alt="" class="marquee-icon" />
+                </li>
+                <li>Web development</li>
+                <li>
+                  <img src="assets/img/star.svg" alt="" class="marquee-icon" />
+                </li>
+                <li>Branding</li>
+                <li>
+                  <img src="assets/img/star.svg" alt="" class="marquee-icon" />
+                </li>
+                <li>Logo design</li>
+                <li>
+                  <img src="assets/img/star.svg" alt="" class="marquee-icon" />
+                </li>
+              </ul>
+              <ul class="list-inline">
+                <li>Web design</li>
+                <li>
+                  <img src="assets/img/star.svg" alt="" class="marquee-icon" />
+                </li>
+                <li>Web development</li>
+                <li>
+                  <img src="assets/img/star.svg" alt="" class="marquee-icon" />
+                </li>
+                <li>Branding</li>
+                <li>
+                  <img src="assets/img/star.svg" alt="" class="marquee-icon" />
+                </li>
+                <li>Logo design</li>
+                <li>
+                  <img src="assets/img/star.svg" alt="" class="marquee-icon" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
 			<!-- footer -->
 			<section class="bottom-footer">
@@ -283,16 +283,15 @@
 							<hr />
 							<img class="footer-icons red" src="assets/img/star.svg" alt="" />
 						</li>
-						<li>
-							<a href="#about">About</a>
+						<li class="contactBtn">
+							<a href="">Contact</a>
 						</li>
 						<li>
 							<hr />
 							<img class="footer-icons red" src="assets/img/star.svg" alt="" />
 						</li>
-
 						<li>
-							<a href="#crew">Crew</a>
+							<a href="#about">About</a>
 						</li>
 					</ul>
 					<div class="name-logo grid-end">
@@ -306,14 +305,12 @@
 		</footer>
 	</div>
 
-	<!-- animate on scroll library -->
-	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-	<script>
-		AOS.init();
-	</script>
+    <!-- animate on scroll library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 
-</body>
-
-<script src="assets/javascript/javascript.js" defer></script>
-
+  <script src="assets/javascript/javascript.js" defer></script>
 </html>
